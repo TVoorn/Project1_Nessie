@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+.g-recaptcha
+{
+  transform:scale(0.895);
+  -webkit-transform:scale(0.895);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+}
 .logo-text{
   text-align: center;
   font-size: 150px;

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Downloads/Nessie/.idea/Project1_Nessie.iml" filepath="$USER_HOME$/Downloads/Nessie/.idea/Project1_Nessie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Nessie.iml" filepath="$PROJECT_DIR$/.idea/Nessie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/Nessie/.idea/Project1_Nessie.iml" filepath="$PROJECT_DIR$/../../../XAMPP/xamppfiles/htdocs/Nessie/.idea/Project1_Nessie.iml" />
     </modules>
   </component>
 </project>
