@@ -14,35 +14,12 @@ if(!empty($_POST)){
       $insert->bind_param('sss', $username, $password, $nessie_code);
 
       if($insert->execute()){
-        header('Location: connect.php');
+        header('Location: index.php');
         die();
       }
     }
   }
 }
-
-
-/*
-$records = array();
-
-if($results = $link->query("SELECT * FROM account")){
-  if($results->num_rows){
-    while($row = $results->fetch_object()){
-      $records[] = $row;
-    }
-    $results->free();
-  }
-}
-
-echo '<pre>', print_r($records), '</pre>';
-
-if($insert = $link->query("
-//INSERT INTO account(username, password, nessie_code)
-//VALUES ('Alex', 'Garrett', 222333)
-")){
-echo $link-> affected_rows;
-}
-*/
 ?>
 
 
@@ -75,7 +52,7 @@ echo $link-> affected_rows;
       <button value="Insert">create</button>
       <p class="message">Already registered? <a href="#">Sign In</a></p>
     </form>
-    <form class="login-form">
+    <form class="login-form" action="login.php" method="post">
 
       <input type="text" name="username" id="username" placeholder="username" autocomplete="off"/>
       <input type="password" name="password" id="password" placeholder="password" autocomplete="off"/>
