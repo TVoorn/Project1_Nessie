@@ -1,25 +1,9 @@
 <?php
+session_start();
+
 require 'connect.php';
 require 'security.php';
-
-if(!empty($_POST)){
-  if(isset($_POST['username'], $_POST['password'], $_POST['nessie_code'])){
-
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
-    $nessie_code = trim($_POST['nessie_code']);
-
-    if(!empty($username) && !empty($password) && !empty($nessie_code)){
-      $insert = $link->prepare("INSERT INTO account (username, password, nessie_code) VALUES (?,?,?)");
-      $insert->bind_param('sss', $username, $password, $nessie_code);
-
-      if($insert->execute()){
-        header('Location: index.php');
-        die();
-      }
-    }
-  }
-}
+require 'register.php';
 ?>
 
 
@@ -34,8 +18,9 @@ if(!empty($_POST)){
 
 
   <link rel="stylesheet" href="css/style.css">
+  <!--
   <script src='https://www.google.com/recaptcha/api.js'></script>
-
+-->
 </head>
 
 <body>
@@ -43,12 +28,13 @@ if(!empty($_POST)){
 
 <div class="login-page">
   <div class="form">
-    <form action="" method="post" class="register-form">
+    <form class="register-form" action="register.php" method="post">
       <input type="text" name="username" id="username" placeholder="name" autocomplete="off"/>
       <input type="password" name="password" id="password" placeholder="password" autocomplete="off"/>
       <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off"/>
+      <!--
       <div class="g-recaptcha" data-sitekey="6Ld5FQoUAAAAAJxj84cEY2ZTcmv91mX5wydvOURs"></div>
-
+-->
       <button value="Insert">create</button>
       <p class="message">Already registered? <a href="#">Sign In</a></p>
     </form>
