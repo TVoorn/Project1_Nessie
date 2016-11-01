@@ -8,6 +8,10 @@
   -webkit-transform-origin:0 0;
 }
 
+.login-error{
+  color: red;
+  margin:10px;
+}
 .register-message{
   text-align: center;
   font-family: monospace;
