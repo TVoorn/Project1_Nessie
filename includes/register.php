@@ -22,7 +22,7 @@ if (!empty($_POST)) {
             $insert->bind_param('sss', $username, $password, $nessie_code);
 
             if ($insert->execute()) {
-                header('Location: ../index.php');
+                header('Location: ../register_page.php');
                 die();
             }
         }

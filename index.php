@@ -25,9 +25,9 @@ require 'includes/register.php';
 <div class="login-page">
     <div class="form">
         <form class="register-form" action="includes/register.php" method="post">
-            <input type="text" name="username" id="username" placeholder="name" autocomplete="off"/>
-            <input type="password" name="password" id="password" placeholder="password" autocomplete="off"/>
-            <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off"/>
+            <input class="username" type="text" name="username" id="username" placeholder="name" autocomplete="off" required/>
+            <input type="password" name="password" id="password" placeholder="password" autocomplete="off" required/>
+            <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off" required/>
             <!--
             <div class="g-recaptcha" data-sitekey="6Ld5FQoUAAAAAJxj84cEY2ZTcmv91mX5wydvOURs"></div>
       -->
@@ -36,8 +36,8 @@ require 'includes/register.php';
         </form>
         <form class="login-form" action="includes/login.php" method="post">
 
-            <input type="text" name="username" id="username" placeholder="username" autocomplete="off"/>
-            <input type="password" name="password" id="password" placeholder="password" autocomplete="off"/>
+            <input type="text" name="username" id="username" placeholder="username" autocomplete="off" required/>
+            <input type="password" name="password" id="password" placeholder="password" autocomplete="off" required/>
             <button>login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>

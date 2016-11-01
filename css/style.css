@@ -7,6 +7,14 @@
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
 }
+
+.register-message{
+  text-align: center;
+  font-family: monospace;
+  font-size:15px;
+  margin:10px;
+
+}
 .logo-text{
   text-align: center;
   font-size: 150px;
