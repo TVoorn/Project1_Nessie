@@ -2,7 +2,7 @@
 
 session_start();
 
-include 'connect.php';
+include '../connect.php';
 
 $username = trim($_POST['username']);
 $password = trim($_POST['password']);
@@ -17,4 +17,4 @@ if(!$row = mysqli_fetch_assoc($result)){
 
 }
 
-//header("Location: index.php");
+header("Location: ../control.html");
