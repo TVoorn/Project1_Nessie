@@ -16,9 +16,9 @@ require 'includes/register.php';
 
 
     <link rel="stylesheet" href="css/style.css">
-    <!--
+
     <script src='https://www.google.com/recaptcha/api.js'></script>
-  -->
+
 </head>
 
 <body>
@@ -32,9 +32,9 @@ require 'includes/register.php';
             <input type="password" name="password" id="password" placeholder="password" autocomplete="off" required/>
             <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off"
                    required/>
-            <!--
+
             <div class="g-recaptcha" data-sitekey="6Ld5FQoUAAAAAJxj84cEY2ZTcmv91mX5wydvOURs"></div>
-      -->
+
             <button value="Insert">create</button>
             <p class="message">Already registered? <a href="#">Sign In</a></p>
         </form>
@@ -51,21 +51,6 @@ require 'includes/register.php';
             </div>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>
-        <!--
-
-        <form action="includes/logout.php">
-            <button>LOG OUT</button>
-        </form>
-
-        <?php
-        if (isset($_SESSION['id'])) {
-            echo $_SESSION['id'];
-        } else {
-            echo "You are not logged in!";
-        }
-
-        ?>
--->
     </div>
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

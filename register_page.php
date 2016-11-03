@@ -14,9 +14,9 @@ require 'includes/register.php';
 
 
     <link rel="stylesheet" href="css/style.css">
-    <!--
+
     <script src='https://www.google.com/recaptcha/api.js'></script>
-  -->
+
 </head>
 
 <body>
@@ -25,25 +25,15 @@ require 'includes/register.php';
 <div class="login-page">
 
 
-
     <div class="form">
 
-    <div class="register-message">
-        Your account is successfully created
-    </div>
+        <div class="register-message">
+            Your account is successfully created
+        </div>
 
         <form action="index.php">
             <button>RETURN</button>
         </form>
-
-        <?php
-        if (isset($_SESSION['id'])){
-            echo $_SESSION['id'];
-        } else{
-            echo "You are not logged in!";
-        }
-
-        ?>
 
     </div>
 </div>
