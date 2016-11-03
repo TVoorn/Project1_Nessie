@@ -13,11 +13,10 @@
   margin:10px;
 }
 .register-message{
-  text-align: center;
-  font-family: monospace;
-  font-size:15px;
-  margin:10px;
-
+  color: #b3b3b3;
+  font-size: 16px;
+  text-decoration: none;
+  margin:7px;
 }
 .logo-text{
   text-align: center;

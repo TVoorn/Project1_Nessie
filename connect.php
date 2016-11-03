@@ -26,8 +26,4 @@ $success = mysqli_real_connect(
     $port
 ) or die("Database not connected correctly");
 
-$result = $link->query("SELECT * FROM account WHERE username='12344'") or die($link->error);
-
-//print_r($result);
-
 ?>

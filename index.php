@@ -27,9 +27,11 @@ require 'includes/register.php';
 <div class="login-page">
     <div class="form">
         <form class="register-form" action="includes/register.php" method="post">
-            <input class="username" type="text" name="username" id="username" placeholder="name" autocomplete="off" required/>
+            <input class="username" type="text" name="username" id="username" placeholder="name" autocomplete="off"
+                   required/>
             <input type="password" name="password" id="password" placeholder="password" autocomplete="off" required/>
-            <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off" required/>
+            <input type="text" name="nessie_code" id="nessie_code" placeholder="nessie-code" autocomplete="off"
+                   required/>
             <!--
             <div class="g-recaptcha" data-sitekey="6Ld5FQoUAAAAAJxj84cEY2ZTcmv91mX5wydvOURs"></div>
       -->
@@ -41,23 +43,24 @@ require 'includes/register.php';
 
             <input type="text" name="username" id="username" placeholder="username" autocomplete="off" required/>
             <input type="password" name="password" id="password" placeholder="password" autocomplete="off" required/>
-            <button>login</button>
+            <button name="login" id="login">login</button>
             <div class="login-error">
-            <?php $reasons = array("password" => "Wrong Username or Password", "blank" => "You have left one or more fields blank."); if ($_GET["loginFailed"])
-                echo $reasons[$_GET["reason"]]; ?>
-    </div>
+                <?php $reasons = array("password" => "Wrong Username or Password", "blank" => "You have left one or more fields blank.");
+                if ($_GET["loginFailed"])
+                    echo $reasons[$_GET["reason"]]; ?>
+            </div>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
         </form>
-<!--
+        <!--
 
         <form action="includes/logout.php">
             <button>LOG OUT</button>
         </form>
 
         <?php
-        if (isset($_SESSION['id'])){
+        if (isset($_SESSION['id'])) {
             echo $_SESSION['id'];
-        } else{
+        } else {
             echo "You are not logged in!";
         }
 
